@@ -42,15 +42,19 @@ const Conversation = () => {
       };
       const newMessages = [...messages, userMessage];
 
+      console.log("Submitting messages: ", newMessages);
+
       const response = await axios.post("/api/conversation", {
         messages: newMessages,
       });
+
+      console.log("API response: ", response.data);
 
       setMessages((current) => [...current, userMessage, response.data]);
 
       form.reset();
     } catch (err: any) {
-      console.log(err);
+      console.log("Error during API call: ", err);
     } finally {
       router.refresh();
     }
@@ -94,7 +98,13 @@ const Conversation = () => {
           </Form>
         </div>
         <div className="space-y-4 mt-4">
-          Messages Content
+          <div className="flex flex-col-reverse gap-y-4">
+            {messages.map((message) => (
+              <div key={message.content}>
+                {message.content}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -67,6 +67,7 @@ const Sidebar = () => {
               fill
               src="/logo.png"
               alt="Logo"
+              sizes="(max-width: 768px) 100vw, 33vw"
             />
           </div>
           <h1 className={cn("text-2xl font-bold", montserrat.className)}>

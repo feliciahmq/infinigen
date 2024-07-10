@@ -17,8 +17,8 @@ const Video = () => {
         title="Video"
         description="Our AI Video model."
         icon={MessageSquare}
-        iconColor="text-violet-500"
-        bgColor="bg-violet-500/10"
+        iconColor="text-orange-700"
+        bgColor="bg-orange-700/10"
       />
       <div className="px-4 lg:px-4">
         <div>

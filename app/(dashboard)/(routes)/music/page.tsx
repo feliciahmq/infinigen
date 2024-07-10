@@ -17,8 +17,8 @@ const Music = () => {
         title="Music"
         description="Our AI Music model."
         icon={MessageSquare}
-        iconColor="text-violet-500"
-        bgColor="bg-violet-500/10"
+        iconColor="text-emerald-500"
+        bgColor="bg-emerald-500/10"
       />
       <div className="px-4 lg:px-4">
         <div>

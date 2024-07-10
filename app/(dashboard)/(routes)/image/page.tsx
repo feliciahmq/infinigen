@@ -17,8 +17,8 @@ const Image = () => {
         title="Image"
         description="Our AI Image model."
         icon={MessageSquare}
-        iconColor="text-violet-500"
-        bgColor="bg-violet-500/10"
+        iconColor="text-pink-700"
+        bgColor="bg-pink-700/10"
       />
       <div className="px-4 lg:px-4">
         <div>

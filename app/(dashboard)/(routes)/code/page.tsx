@@ -16,8 +16,8 @@ const Code = () => {
         title="Code"
         description="Our AI Code model."
         icon={MessageSquare}
-        iconColor="text-violet-500"
-        bgColor="bg-violet-500/10"
+        iconColor="text-green-700"
+        bgColor="bg-green-700/10"
       />
       <div className="px-4 lg:px-4">
         <div>

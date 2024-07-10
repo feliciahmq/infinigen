@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
 import { Empty } from "@/components/empty";
 
-const Conversation = () => {
+const Code = () => {
 
   return (
     <div>
       <Heading 
-        title="Conversation"
-        description="Our AI Conversation model."
+        title="Code"
+        description="Our AI Code model."
         icon={MessageSquare}
         iconColor="text-violet-500"
         bgColor="bg-violet-500/10"
@@ -28,7 +28,7 @@ const Conversation = () => {
                 <div className="m-0 p-0">
                   <Input 
                     className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
-                    placeholder="Message InfiniGen"
+                    placeholder="Layout of an ecommerce platform"
                   />
                 </div>
               </div>
@@ -46,4 +46,4 @@ const Conversation = () => {
   );
 }
 
-export default Conversation;
+export default Code;

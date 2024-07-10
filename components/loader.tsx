@@ -12,7 +12,7 @@ export const Loader = () => {
         />
       </div>
       <p className="text-sm text-muted-foreground">
-        InfiniGen is thinking...
+        InfiniGen is generating...
       </p>
     </div>
   );

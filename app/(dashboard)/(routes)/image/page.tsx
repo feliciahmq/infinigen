@@ -10,8 +10,7 @@ import { Loader } from "@/components/loader";
 
 const Image = () => {
   const isLoading = true;
-  const messages = [];
-
+  
   return (
     <div>
       <Heading 
@@ -46,10 +45,6 @@ const Image = () => {
             <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
               <Loader />
             </div>
-          )}
-          {messages.length === 0 && !isLoading && (
-            <Empty label="No conversation started."/>
-            
           )}
         </div>
       </div>

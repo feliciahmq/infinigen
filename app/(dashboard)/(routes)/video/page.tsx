@@ -6,9 +6,11 @@ import { Button } from "@/components/ui/button";
 
 import { MessageSquare } from "lucide-react";
 import { Empty } from "@/components/empty";
+import { Loader } from "@/components/loader";
 
 const Video = () => {
-
+  const isLoading = false;
+  
   return (
     <div>
       <Heading 
@@ -28,7 +30,7 @@ const Video = () => {
                 <div className="m-0 p-0">
                   <Input 
                     className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
-                    placeholder="A video of a cow dancing"
+                    placeholder="A picture of a cat crossing the road"
                   />
                 </div>
               </div>
@@ -39,7 +41,14 @@ const Video = () => {
           </div>
         </div>
         <div className="space-y-4 mt-4">
-          <Empty label="No conversation started."/>
+          {isLoading && (
+            <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
+              <Loader />
+            </div>
+          )}
+          {!isLoading && (
+            <Empty label="No conversation started."/>
+          )}
         </div>
       </div>
     </div>

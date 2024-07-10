@@ -5,10 +5,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 import { MessageSquare } from "lucide-react";
-import { Empty } from "@/components/empty";
+import { Loader } from "@/components/loader";
 
 const Code = () => {
-
+  const isLoading = true;
+  
   return (
     <div>
       <Heading 
@@ -28,7 +29,7 @@ const Code = () => {
                 <div className="m-0 p-0">
                   <Input 
                     className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
-                    placeholder="Layout of an ecommerce platform"
+                    placeholder="A loader component"
                   />
                 </div>
               </div>
@@ -39,7 +40,11 @@ const Code = () => {
           </div>
         </div>
         <div className="space-y-4 mt-4">
-          <Empty label="No conversation started."/>
+          {isLoading && (
+            <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
+              <Loader />
+            </div>
+          )}
         </div>
       </div>
     </div>

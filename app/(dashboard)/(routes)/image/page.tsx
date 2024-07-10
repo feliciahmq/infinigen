@@ -9,7 +9,7 @@ import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
 
 const Image = () => {
-  const isLoading = true;
+  const isLoading = false;
   
   return (
     <div>
@@ -45,6 +45,9 @@ const Image = () => {
             <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
               <Loader />
             </div>
+          )}
+          {!isLoading && (
+            <Empty label="No conversation started."/>
           )}
         </div>
       </div>

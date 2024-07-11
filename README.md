@@ -1,6 +1,6 @@
 InfiniGen -- A platform that generates infinite possibilities!
 
-Check out InfiniGen [here]()!
+Check out InfiniGen [here](https://infinigen.vercel.app/)!
 
 Built with Next.js framework and written in TypeScript.
 

@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Music } from "lucide-react";
 import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
+import { usePremiumUpgrade } from "@/hooks/usePremiumUpgrade";
 
 const MusicPage = () => {
+  const premiumUpgrade = usePremiumUpgrade();
   const isLoading = false;
   
   return (
@@ -34,7 +36,7 @@ const MusicPage = () => {
                   />
                 </div>
               </div>
-              <Button className="col-span-12 lg:col-span-2 w-full" type="submit">
+              <Button onClick={premiumUpgrade.onOpen} className="col-span-12 lg:col-span-2 w-full" type="submit">
                 Generate
               </Button>
             </div>

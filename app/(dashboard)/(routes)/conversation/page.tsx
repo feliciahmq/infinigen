@@ -9,6 +9,7 @@ import { Empty } from "@/components/empty";
 import { cn } from "@/lib/utils";
 import { UserAvatar } from "@/components/user-avatar";
 import { BotAvatar } from "@/components/bot-avatar";
+import { usePremiumUpgrade } from "@/hooks/usePremiumUpgrade";
 
 interface Message {
   content: string;
@@ -16,6 +17,7 @@ interface Message {
 }
 
 const ConversationPage = () => {
+  const premiumUpgrade = usePremiumUpgrade();
   const isLoading = false;
   const messages: Message[] = [
     { content: "What is the radius of the sun?", role: "user" },
@@ -49,7 +51,7 @@ const ConversationPage = () => {
                   />
                 </div>
               </div>
-              <Button className="col-span-12 lg:col-span-2 w-full" type="submit">
+              <Button onClick={premiumUpgrade.onOpen} className="col-span-12 lg:col-span-2 w-full" type="submit">
                 Generate
               </Button>
             </div>

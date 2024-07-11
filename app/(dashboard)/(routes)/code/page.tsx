@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 
 import { Code } from "lucide-react";
 import { Loader } from "@/components/loader";
+import { usePremiumUpgrade } from "@/hooks/usePremiumUpgrade";
 
 const CodePage = () => {
+  const premiumUpgrade = usePremiumUpgrade();
   const isLoading = true;
   
   return (
@@ -33,7 +35,7 @@ const CodePage = () => {
                   />
                 </div>
               </div>
-              <Button className="col-span-12 lg:col-span-2 w-full" type="submit">
+              <Button onClick={premiumUpgrade.onOpen} className="col-span-12 lg:col-span-2 w-full" type="submit">
                 Generate
               </Button>
             </div>

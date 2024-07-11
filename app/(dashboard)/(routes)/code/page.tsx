@@ -4,10 +4,10 @@ import Heading from "@/components/heading";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-import { MessageSquare } from "lucide-react";
+import { Code } from "lucide-react";
 import { Loader } from "@/components/loader";
 
-const Code = () => {
+const CodePage = () => {
   const isLoading = true;
   
   return (
@@ -15,7 +15,7 @@ const Code = () => {
       <Heading 
         title="Code"
         description="Our AI Code model."
-        icon={MessageSquare}
+        icon={Code}
         iconColor="text-green-700"
         bgColor="bg-green-700/10"
       />
@@ -51,4 +51,4 @@ const Code = () => {
   );
 }
 
-export default Code;
+export default CodePage;

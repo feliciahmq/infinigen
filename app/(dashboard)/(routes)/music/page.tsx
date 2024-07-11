@@ -4,11 +4,11 @@ import Heading from "@/components/heading";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-import { MessageSquare } from "lucide-react";
+import { Music } from "lucide-react";
 import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
 
-const Music = () => {
+const MusicPage = () => {
   const isLoading = false;
   
   return (
@@ -16,7 +16,7 @@ const Music = () => {
       <Heading 
         title="Music"
         description="Our AI Music model."
-        icon={MessageSquare}
+        icon={Music}
         iconColor="text-emerald-500"
         bgColor="bg-emerald-500/10"
       />
@@ -55,4 +55,4 @@ const Music = () => {
   );
 }
 
-export default Music;
+export default MusicPage;

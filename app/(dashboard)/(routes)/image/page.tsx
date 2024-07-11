@@ -4,11 +4,11 @@ import Heading from "@/components/heading";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-import { MessageSquare } from "lucide-react";
+import { ImageIcon } from "lucide-react";
 import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
 
-const Image = () => {
+const ImagePage = () => {
   const isLoading = false;
   
   return (
@@ -16,7 +16,7 @@ const Image = () => {
       <Heading 
         title="Image"
         description="Our AI Image model."
-        icon={MessageSquare}
+        icon={ImageIcon}
         iconColor="text-pink-700"
         bgColor="bg-pink-700/10"
       />
@@ -55,4 +55,4 @@ const Image = () => {
   );
 }
 
-export default Image;
+export default ImagePage;

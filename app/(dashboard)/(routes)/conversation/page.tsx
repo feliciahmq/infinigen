@@ -15,7 +15,7 @@ interface Message {
   role: "user" | "system";
 }
 
-const Conversation = () => {
+const ConversationPage = () => {
   const isLoading = false;
   const messages: Message[] = [
     { content: "What is the radius of the sun?", role: "user" },
@@ -80,4 +80,4 @@ const Conversation = () => {
   );
 }
 
-export default Conversation;
+export default ConversationPage;

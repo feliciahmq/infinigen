@@ -4,11 +4,11 @@ import Heading from "@/components/heading";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-import { MessageSquare } from "lucide-react";
+import { Video } from "lucide-react";
 import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
 
-const Video = () => {
+const VideoPage = () => {
   const isLoading = false;
   
   return (
@@ -16,7 +16,7 @@ const Video = () => {
       <Heading 
         title="Video"
         description="Our AI Video model."
-        icon={MessageSquare}
+        icon={Video}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"
       />
@@ -55,4 +55,4 @@ const Video = () => {
   );
 }
 
-export default Video;
+export default VideoPage;

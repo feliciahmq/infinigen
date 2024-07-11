@@ -14,6 +14,8 @@ export const Empty = ({
           src="/empty.png"
           alt="Empty"
           fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          priority
         />
       </div>
       <p className="text-muted-foreground text-sm text-center">

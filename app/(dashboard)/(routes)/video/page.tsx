@@ -32,7 +32,7 @@ const VideoPage = () => {
                 <div className="m-0 p-0">
                   <Input 
                     className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
-                    placeholder="A picture of a cat crossing the road"
+                    placeholder="A video of a cat jumping across the wall"
                   />
                 </div>
               </div>
